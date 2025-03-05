@@ -140,7 +140,7 @@ public class DrawingShapes {
         int numWhiteSpace;
         int numDots = l;
         boolean printDot;
-        int increment = 2;
+        int increment;
 
         for(int i = 0; i < l * 3 - 2; i++) {
             for(int j = 0; j < base; j++) {
