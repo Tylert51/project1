@@ -8,8 +8,8 @@ public class DrawingShapes {
         System.out.println("Enter a shape: r t h o p");
         String check = "r t h o p";
 
-        String shape = sc.nextLine();
-        if(!check.contains(shape)) {    // If invalid shape
+        String shape = sc.nextLine().trim();
+        if(!check.contains(shape) || !shape.equals(String.valueOf(shape.charAt(0)))) {    // Checks if string is contained in possible values and makes sure it is one character long
             System.out.println("Invalid shape\nGoodbye!");
             System.exit(0);
         }
@@ -63,6 +63,7 @@ public class DrawingShapes {
             }
         }
 
+        sc.close();
 
     }
 
